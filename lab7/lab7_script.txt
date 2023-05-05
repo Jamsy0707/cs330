@@ -1,0 +1,53 @@
+Script started on 2022-11-01 12:40:41-06:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="83" LINES="36"]
+os1[1]% ls -l
+total 8
+-rw------- 1 jls273 csugrd    0 Nov  1 12:40 lab7_script.txt
+-rw------- 1 jls273 csugrd 2066 Nov  1 12:34 myIO.cpp
+drwxr-xr-x 2 jls273 csugrd 4096 Nov  1 11:31 [0m[01;34mSamples[0m/
+os1[2]% g++ myIO.cpp -o myIO
+os1[3]% ./myIO
+Please use 2 arguments
+os1[4]% ./myIO file.txt
+n_char = 0 	 errno = 0
+
+inFile = 3 	 errno = 0
+James
+Sieben
+200455325
+CS 330
+Lab 7
+n_char = 0 	 errno = 0
+
+inFile = 3 	 errno = 0
+In the parent... 
+James
+Sieben
+200455325
+CS 330
+Lab 7
+os1[5]% ls -l
+total 32
+-rw------- 1 jls273 csugrd    36 Nov  1 12:42 file.txt
+-rw------- 1 jls273 csugrd     0 Nov  1 12:40 lab7_script.txt
+-rwx------ 1 jls273 csugrd 17184 Nov  1 12:41 [0m[01;32mmyIO[0m*
+-rw------- 1 jls273 csugrd  2066 Nov  1 12:34 myIO.cpp
+drwxr-xr-x 2 jls273 csugrd  4096 Nov  1 11:31 [01;34mSamples[0m/
+os1[6]% cat file.txt
+James
+Sieben
+200455325
+CS 330
+Lab 7
+os1[7]% ./myIO /file.txt
+n_char = 0 	 errno = 0
+
+inFile = -1 	 errno = 13
+Trying to open file: : Permission denied
+n_char = 0 	 errno = 0
+
+inFile = -1 	 errno = 2
+Trying to open file: : No such file or directory
+os1[8]% exit
+exit
+
+Script done on 2022-11-01 12:43:20-06:00 [COMMAND_EXIT_CODE="0"]

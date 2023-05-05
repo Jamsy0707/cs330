@@ -1,0 +1,48 @@
+
+
+---------- main -------------------
+
+0xffffffffffff : Last address
+0x55f39d581695 : Address etext
+0x55f39d584020 : Address edata
+0x55f39d5857d0 : Address end
+0x55f39d5813d2 : Address of code for proc1
+0x55f39d5814d7 : Address of code for proc2
+0x55f39d584044 : Address of uninitialized global variable g0
+0x55f39d584010 : Address of initialized   global variable g1
+0x55f39d584060 : Address of uninitialized global array    g2
+0x55f39d584014 : Address of initialized   global variable g3
+0x55f39d584040 : Address of uninitialized global variable g4
+0x55f39ef6c2a0 : Address heap1 in heap space
+0x55f39ef6c2c0 : Address heap2 in heap space
+0x7fff388716fc : Address of local variable lc0
+0x7fff38871700 : Address of local variable lc1
+0x7fff38871704 : Address of local variable lc2
+0x55f39d584024 : Address of local uninitialized static var ls0
+0x55f39d584018 : Address of local initialized   static var ls1
+
+
+----------- proc1 ------------------
+
+0x55f39d5813d2 : Address of code for proc1
+0x55f39d584044 : Address of global variable g0
+0x55f39d584010 : Address of global variable g1
+0x55f39d584060 : Address of global variable g2
+0x55f39d584014 : Address of global variable g3
+0x55f39d584040 : Address of global variable g4
+0x7fff388716d0 : Address of local variable lc3
+0x7fff388716d4 : Address of local variable lc4
+
+
+------------ proc2 -----------------
+
+0x55f39d5814d7 : Address of code for proc2
+0x55f39d584044 : Address of global variable g0
+0x55f39d584010 : Address of global variable g1
+0x55f39d584060 : Address of global variable g2
+0x55f39d584014 : Address of global variable g3
+0x55f39d584040 : Address of global variable g4
+0x7fff388716d0 : Address of local variable lc5
+0x7fff388716d4 : Address of local variable lc6
+0x55f39d584028 : Address of local uninitialized static var ls2
+0x55f39d58401c : Address of local initialized   static var ls3

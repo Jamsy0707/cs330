@@ -1,0 +1,28 @@
+Script started on 2022-09-18 19:15:42-06:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="98" LINES="16"]
+os1[1]% make clean
+rm -f *.o
+os1[2]% make c[Kvalgrind
+gcc -c -ggdb main.c
+gcc -c -ggdb functions.c
+gcc main.o functions.o -o demo
+valgrind --leak-check=yes ./demo
+==2997755== Memcheck, a memory error detector
+==2997755== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2997755== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2997755== Command: ./demo
+==2997755== 
+How big is the array? 10
+min value in array is: 20
+==2997755== 
+==2997755== HEAP SUMMARY:
+==2997755==     in use at exit: 0 bytes in 0 blocks
+==2997755==   total heap usage: 3 allocs, 3 frees, 2,088 bytes allocated
+==2997755== 
+==2997755== All heap blocks were freed -- no leaks are possible
+==2997755== 
+==2997755== For lists of detected and suppressed errors, rerun with: -s
+==2997755== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+os1[3]% exit
+exit
+
+Script done on 2022-09-18 19:25:49-06:00 [COMMAND_EXIT_CODE="0"]

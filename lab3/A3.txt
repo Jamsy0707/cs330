@@ -1,0 +1,45 @@
+Script started on 2022-10-06 00:50:27-06:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="101" LINES="15"]
+os1[1]% g++ HALmod.cpp main.cpp -o a
+os1[2]% ./a
+HALshell> This is a test
+The words in reverse order are: test a is This 
+HALshell> to see what happens
+The words in reverse order are: happens what–U see?–U to»?–U 
+HALshell> It is a success
+The words in reverse order are: success aç»?–U is»?–U It»?–U 
+HALshell> lo
+The words in reverse order are: lo»?–U 
+
+HALshell: terminating ...
+os1[3]% valgrind --leak-check=yes ./a
+==1895963== Memcheck, a memory error detector
+==1895963== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1895963== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1895963== Command: ./a
+==1895963== 
+HALshell> lo
+==1895963== Conditional jump or move depends on uninitialised value(s)
+==1895963==    at 0x483EFB8: __strlen_sse2 (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1895963==    by 0x4985BCD: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==1895963==    by 0x10A9D8: printReverse(char**, int) (in /home/hercules/j/jls273/cs330/lab3/a)
+==1895963==    by 0x10AB2B: main (in /home/hercules/j/jls273/cs330/lab3/a)
+==1895963== 
+The words in reverse order are: lo 
+
+HALshell: terminating ...
+==1895963== 
+==1895963== HEAP SUMMARY:
+==1895963==     in use at exit: 0 bytes in 0 blocks
+==1895963==   total heap usage: 6 allocs, 6 frees, 74,766 bytes allocated
+==1895963== 
+==1895963== All heap blocks were freed -- no leaks are possible
+==1895963== 
+==1895963== Use --track-origins=yes to see where uninitialised values come from
+==1895963== For lists of detected and suppressed errors, rerun with: -s
+==1895963== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+os1[4]% quit
+quit: Command not found.
+os1[5]% exit
+exit
+
+Script done on 2022-10-06 00:52:25-06:00 [COMMAND_EXIT_CODE="0"]

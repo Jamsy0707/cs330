@@ -1,0 +1,18 @@
+Script started on 2022-10-18 00:19:43-06:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="79" LINES="8"]
+os1[1]% p[Kos1[1]% pwd
+/home/hercules/j/jls273/cs330/lab4
+os1[2]% ls
+[0m[01;32ma.out[0m*      HALmod.h        main.cpp  [01;32mpart2[0m*     [01;34mSamples[0m/
+HALmod.cpp  lab4_200455325  Makefile  part2.cpp  test.txt
+os1[3]% cp main.cpp main.bak
+os1[4]% ls
+[0m[01;32ma.out[0m*      HALmod.h        main.bak  Makefile  part2.cpp  test.txt
+HALmod.cpp  lab4_200455325  main.cpp  [01;32mpart2[0m*    [01;34mSamples[0m/
+os1[5]% rm main.bak
+os1[6]% ls
+[0m[01;32ma.out[0m*      HALmod.h        main.cpp  [01;32mpart2[0m*     [01;34mSamples[0m/
+HALmod.cpp  lab4_200455325  Makefile  part2.cpp  test.txt
+os1[7]% exit
+exit
+
+Script done on 2022-10-18 00:20:20-06:00 [COMMAND_EXIT_CODE="0"]

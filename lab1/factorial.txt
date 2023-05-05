@@ -1,0 +1,27 @@
+Script started on 2022-09-13 13:33:37-06:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="74" LINES="19"]
+os1[1]% a.out
+What factorial would you like to compute? 5
+0x55bcc585b189 : Address of code for factorial
+0x7ffeb111f79c : Address of code for int a
+0x55bcc585b189 : Address of code for factorial
+0x7ffeb111f77c : Address of code for int a
+0x55bcc585b189 : Address of code for factorial
+0x7ffeb111f75c : Address of code for int a
+0x55bcc585b189 : Address of code for factorial
+0x7ffeb111f73c : Address of code for int a
+0x55bcc585b189 : Address of code for factorial
+0x7ffeb111f71c : Address of code for int a
+The answer is: 120
+os1[2]% a.out
+What factorial would you like to compute? 3
+0x55e63eba7189 : Address of code for factorial
+0x7ffdadc9e30c : Address of code for int a
+0x55e63eba7189 : Address of code for factorial
+0x7ffdadc9e2ec : Address of code for int a
+0x55e63eba7189 : Address of code for factorial
+0x7ffdadc9e2cc : Address of code for int a
+The answer is: 6
+os1[3]% exit
+exit
+
+Script done on 2022-09-13 13:34:03-06:00 [COMMAND_EXIT_CODE="0"]
