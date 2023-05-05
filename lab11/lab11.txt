@@ -1,0 +1,18 @@
+Script started on 2022-12-01 15:02:23-06:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="20"]
+a049849[1]% ./backup.sh hello there
+Usage: ./backup.sh dirName
+a049849[2]% ./backup.sh hello there[K[K[K[K[K[K[K[K[K[K
+Usage: ./backup.sh dirName
+a049849[3]% ./backup.sh NewDir
+cp: cannot stat '*.c': No such file or directory
+cp: cannot stat '*.h': No such file or directory
+a049849[4]% touch a.c b.c a.h
+a049849[5]% touch a.c b.c a.h[13G./backup.sh NewDir
+Directory NewDir already exists.
+a049849[6]% ./backup.sh NewDir2
+a049849[7]% ls NewDir2
+a.c  a.h  b.c
+a049849[8]% exit
+exit
+
+Script done on 2022-12-01 15:03:20-06:00 [COMMAND_EXIT_CODE="0"]
